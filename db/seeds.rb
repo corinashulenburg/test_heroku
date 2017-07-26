@@ -14,13 +14,13 @@ User.destroy_all
 #creating 3 teams
 3.times do
   team = Team.create(
-  name: Faker: :Team.name,
-  sport: Faker: :Team.sport,
+  name: Faker::Team.name,
+  sport: Faker::Team.sport,
   )
 #with 5 users..
 5.times do
   team.users.create(
-  name: Faker: :Name.unique.name
+  name: Faker::Name.unique.name
   )
 
 end
